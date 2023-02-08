@@ -17,7 +17,13 @@ function Home() {
         <span>Price:</span>
       </div>
       <div>
-        <button>Add to cart</button>
+        <button
+          onClick={() =>
+            props.addToCartHandler({ price: 1000, name: "iphone" })
+          }
+        >
+          Add to cart
+        </button>
       </div>
     </div>
   );
